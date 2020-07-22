@@ -1,0 +1,29 @@
+.content{
+	font-size: 24px;
+	color: aquamarine;
+	width: 400px;
+	.div1 {
+		float: left;
+		width: 300px;
+		background-color: pink;
+		height: calc(100vh - 100px);
+		.box {
+			&-top {
+				overflow: hidden;
+				margin-bottom: 20px;
+			}
+			&-bottom {
+				overflow: hidden;
+				&-inner {
+					margin-top: 20px;
+				}
+			}
+		}
+	  }
+	  
+	  .div2 {
+		background-color: black;
+		height: 100vh;
+		overflow: hidden; // 如果删除则两栏布局失败
+	  }
+}
